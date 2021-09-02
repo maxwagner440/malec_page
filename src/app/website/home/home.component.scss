@@ -1,0 +1,38 @@
+
+.home{
+  min-height:100vh;
+  color:white;
+  background-color:#102b2f;
+  background-image: linear-gradient(40deg, white, #102b2f );
+}
+
+.sub-text {
+  font-size: 1.75em;
+}
+
+.image_one {
+  width:50%;
+  border-radius: 4px;
+}
+
+.animate-left {
+  margin-bottom: 0;
+  animation-duration: 3s;
+  animation-name: slideinleft;
+}
+
+.animate-right {
+  animation-duration: 3s;
+  animation-name: slideinright;
+}
+
+@keyframes slideinleft {
+  from {-webkit-transform: translateX(-300px);}
+  to {-webkit-transform: translateX(0px);}
+}
+
+
+@keyframes slideinright {
+  from {-webkit-transform: translateX(300px);}
+  to {-webkit-transform: translateX(0px);}
+}
